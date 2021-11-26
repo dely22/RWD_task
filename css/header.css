@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root {
+	--main-color: #ffffff;
+	--black: #13131a;
+	--bg: #010103;
+	--border: .1rem solid rgba(255, 255, 255, .3);
+}
+
+* {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	text-decoration: none;
+	text-transform: capitalize;
+	-webkit-transition: .2s linear;
+	transition: .2s linear;
+}
+
+html {
+	font-size: 62.5%;
+	overflow-x: hidden;
+	scroll-padding-top: 9rem;
+	scroll-behavior: smooth;
+}
+
+
+body {
+	background: var(--main-color);
+
+}
+
+section {
+	padding: 2rem 7%;
+}
+
+.header {
+	background: var(--bg);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding: 1.5rem 7%;
+	border-bottom: var(--border);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+}
+
+.header .navbar a .logo {
+	height: 1rem;
+	width: 1rem;
+	border-radius: 5rem;
+}
+
+.header .navbar {
+
+	background: var(--bg);
+}
+
+.header .navbar a {
+	margin: 0 1rem;
+	font-size: 1.8rem;
+	color: #fff;
+}
+
+.header .navbar a:hover {
+	color: var(--main-color);
+	border-bottom: .1rem solid var(--main-color);
+	padding-bottom: .5rem;
+}
+
+#menu-btn {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries  */
+@media (max-width:991px) {
+
+	html {
+		font-size: 55%;
+	}
+
+	.header {
+		padding: 1.5rem 2rem;
+	}
+
+	section {
+		padding: 2rem;
+	}
+
+}
+
+@media (max-width:768px) {
+
+	#menu-btn {
+		display: inline-block;
+		background: #33f;
+		font-size: 2rem;
+	}
+
+	.header .navbar {
+		position: absolute;
+		top: 100%;
+		right: -100%;
+		background: #fff;
+		width: 30rem;
+		height: calc(100vh - 9.5rem);
+	}
+
+	.header .navbar.active {
+		right: 0;
+		right: 0;
+		opacity: .9;
+		border-top-left-radius: 2 rem;
+		border-bottom-left-radius: 2 rem;
+		background: #ffffff;
+	}
+
+	.header .navbar a {
+		color: var(--black);
+		display: block;
+		margin: 1.5rem;
+		padding: .5rem;
+		font-size: 2rem;
+	}
+
+	.header .navbar a:hover {
+		color: #00f;
+
+	}
+
+
+}
+
+@media (max-width:450px) {
+
+	html {
+		font-size: 50%;
+	}
+
+}

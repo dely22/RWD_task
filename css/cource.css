@@ -1,0 +1,50 @@
+.course-3 {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: (minmax(31rem, 1fr))[auto-fit];
+	grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+	gap: 1.5rem;
+}
+
+.course-3 .box {
+	text-align: center;
+	overflow: hidden;
+	background: #eee;
+}
+
+/*
+.course-3 .box:hover .video video {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}*/
+
+.course-3 .box .video {
+	height: 25rem;
+	width: 100%;
+	overflow: hidden;
+	border-radius: .5rem;
+	position: relative;
+}
+
+.course-3 .box .video video {
+	height: 100%;
+	width: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	cursor: pointer;
+}
+
+.course-3 .box .content {
+	padding-top: 1rem;
+}
+
+.course-3 .box .content h3 {
+	font-size: 1.7rem;
+	color: #302851;
+	padding: .5rem 0;
+}
+
+.course-3 .box .content p {
+	font-size: 1.5rem;
+	color: #666;
+}

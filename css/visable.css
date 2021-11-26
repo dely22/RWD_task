@@ -1,0 +1,55 @@
+.continer {
+	margin-top: 10rem;
+	font-size: 3rem;
+}
+
+
+/* media queries  */
+
+
+/*	larg screen ruls	*/
+@media (min-width:992px) {
+	.visible-lg {
+		visibility: visible;
+	}
+
+	.visible-md {
+		visibility: hidden;
+	}
+
+	.visible-sm {
+		visibility: hidden;
+	}
+}
+
+/*	medium screen ruls	*/
+@media (max-width:768px) {
+	.visible-md {
+		visibility: visible;
+	}
+
+	.visible-sm {
+		visibility: hidden;
+	}
+
+	.visible-lg {
+		visibility: hidden;
+	}
+
+}
+
+
+/*	small screen ruls	*/
+@media (max-width:576px) {
+	.visible-sm {
+		visibility: visible;
+	}
+
+	.visible-md {
+		visibility: hidden;
+	}
+
+	.visible-lg {
+		visibility: hidden;
+	}
+}
